@@ -37,10 +37,12 @@ import com.mbmc.fiinfo.util.ConnectivityUtil;
 import com.mbmc.fiinfo.R;
 import com.mbmc.fiinfo.util.StringUtil;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import de.greenrobot.event.EventBus;
 
 
 public class MainActivity extends AppCompatActivity
@@ -191,7 +193,8 @@ public class MainActivity extends AppCompatActivity
         clearEventsFragment.show(getFragmentManager(), "clear");
     }
 
-    public void onEvent(Listener.Connectivity connectivity) {
+    @Subscribe
+    public void onConnectivityEvent(Listener.Connectivity connectivity) {
         setCurrentState();
     }
 

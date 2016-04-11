@@ -10,10 +10,10 @@ import com.mbmc.fiinfo.event.Listener;
 import com.mbmc.fiinfo.provider.EventProvider;
 import com.mbmc.fiinfo.util.ConnectivityUtil;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.Locale;
 import java.util.TimeZone;
-
-import de.greenrobot.event.EventBus;
 
 
 public class EventManager {

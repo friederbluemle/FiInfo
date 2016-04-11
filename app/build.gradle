@@ -34,6 +34,6 @@ dependencies {
 
     // 3rd party
     compile 'com.jakewharton:butterknife:7.0.1' // View binding
-    compile 'de.greenrobot:eventbus:2.4.0' // Event bus
+    compile 'org.greenrobot:eventbus:3.0.0' // Event bus
     compile 'org.parceler:parceler:1.0.4' // Parcelable
 }
